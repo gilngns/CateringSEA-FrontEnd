@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SEA | Catering</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./src/Logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- AOS CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-overlay"></div>
+
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top w-100 scrolled"
+      >
+        <div class="container fs-4">
+          <button
+            class="navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a class="navbar-brand d-none d-lg-none" href="#">
+            <img src="./src/Logo.png" alt="SEA Logo" width="60" />
+          </a>
+
+          <div
+            class="d-none d-lg-flex w-100 justify-content-between align-items-center"
+          >
+            <ul class="navbar-nav flex-row me-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Menu</a>
+              </li>
+            </ul>
+
+            <a class="navbar-brand mx-3" href="#">
+              <img src="./src/Logo.png" alt="SEA Logo" width="80" />
+            </a>
+
+            <ul class="navbar-nav flex-row ms-auto">
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="offcanvas offcanvas-start text-bg-dark d-lg-none"
+            tabindex="-1"
+            id="offcanvasNavbar"
+          >
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title">SEA Catering</h5>
+              <button
+                type="button"
+                class="btn-close btn-close-white"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Content -->
+      <div class="container hero-content py-5 mt-5 mt-lg-0">
+        <div class="row align-items-center">
+          <!-- Text Section -->
+          <div
+            class="col-md-6 text-center text-md-start pt-5 pt-lg-0"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h1 class="display-4 mb-3">
+              Healthy Meals, <br />Anytime, Anywhere
+            </h1>
+            <p class="lead mb-4">
+              Enjoy our delicious dishes made with love and high quality
+              ingredients.
+            </p>
+            <a href="#" class="btn btn-warning fw-bold px-4 py-2 rounded-pill"
+              >BOOK A TABLE</a
+            >
+          </div>
+
+          <!-- Image Section -->
+          <div
+            class="col-md-6 text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <img
+              src="./src/catering.png"
+              alt="Catering Dish"
+              class="img-fluid mx-lg-5 hero-img spin"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featurs -->
+    <section class="py-5 bg-light">
+      <div class="container text-center">
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="0">
+            <div
+              class="feature-card p-4 border rounded shadow-sm h-100 transition"
+            >
+              <i
+                class="fas fa-calendar-alt fa-2x text-warning mb-3 feature-icon"
+              ></i>
+              <h5 class="fw-bold">Event Catering</h5>
+              <p>
+                Delicious food for your special events including weddings,
+                parties, and meetings.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div
+              class="feature-card p-4 border rounded shadow-sm h-100 transition"
+            >
+              <i
+                class="fas fa-utensils fa-2x text-warning mb-3 feature-icon"
+              ></i>
+              <h5 class="fw-bold">Daily Lunchbox</h5>
+              <p>
+                Nutritious and tasty lunch delivered to your home or office
+                daily.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div
+              class="feature-card p-4 border rounded shadow-sm h-100 transition"
+            >
+              <i
+                class="fas fa fa-users fa-2x text-warning mb-3 feature-icon"
+              ></i>
+              <!-- fallback kalau ga ada: fas fa-user-tie -->
+              <h5 class="fw-bold">Private Chef</h5>
+              <p>
+                Hire our master chefs for private in-house dining experiences
+                and gatherings.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section class="container py-5">
+      <div class="row align-items-center">
+        <!-- Right: Text Section (Ditaruh dulu agar muncul di atas pada mobile) -->
+        <div class="col-lg-6 order-2 order-lg-1 px-4 text-center text-lg-start">
+          <h5
+            class="text-warning fw-bold"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            About Us
+          </h5>
+          <h1 class="mb-4" data-aos="fade-up" data-aos-delay="500">
+            Welcome to <span class="text-warning">🍴SEA Catering</span>
+          </h1>
+          <p class="mb-3" data-aos="fade-up" data-aos-delay="600">
+            We deliver the finest service with exceptional flavors. Every dish
+            is prepared with carefully selected ingredients and attention to
+            detail.
+          </p>
+          <p class="mb-4" data-aos="fade-up" data-aos-delay="700">
+            Enjoy a satisfying culinary experience with us — convenient,
+            delicious, and perfect for your special occasions.
+          </p>
+
+          <div class="row mb-3">
+            <div class="col-sm-6 mb-3" data-aos="fade-up" data-aos-delay="800">
+              <div
+                class="d-flex align-items-center p-3 rounded shadow-sm border-start border-4 border-warning bg-white h-100"
+              >
+                <div>
+                  <h1 id="count-experience" class="text-warning fw-bold mb-1">
+                    0
+                  </h1>
+                  <p class="mb-0 text-muted">
+                    Years of <strong class="text-dark">Experience</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3" data-aos="fade-up" data-aos-delay="900">
+              <div
+                class="d-flex align-items-center p-3 rounded shadow-sm border-start border-4 border-warning bg-white h-100"
+              >
+                <div>
+                  <h1 id="count-chefs" class="text-warning fw-bold mb-1">0</h1>
+                  <p class="mb-0 text-muted">
+                    Popular <strong class="text-dark">Master Chefs</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <a
+            href="#"
+            class="btn btn-warning text-white fw-semibold px-4 py-2"
+            data-aos="fade-up"
+            data-aos-delay="1000"
+            >READ MORE</a
+          >
+        </div>
+
+        <!-- Left: 2x2 Image Grid -->
+        <div class="col-lg-6 order-1 order-lg-2 mb-4 mb-lg-0">
+          <div class="row g-3">
+            <div
+              class="col-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="0"
+            >
+              <img src="./src/about1.jpg" class="img-fluid rounded" alt="Image 1" />
+            </div>
+            <div
+              class="col-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="100"
+            >
+              <img src="./src/about2.jpg" class="img-fluid rounded" alt="Image 2" />
+            </div>
+            <div
+              class="col-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="200"
+            >
+              <img src="./src/about3.jpg" class="img-fluid rounded" alt="Image 3" />
+            </div>
+            <div
+              class="col-6"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              data-aos-delay="300"
+            >
+              <img src="./src/about4.jpg" class="img-fluid rounded" alt="Image 4" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu py-5">
+      <div class="container">
+        <div class="text-center mb-4">
+          <h2 class="section-title">
+            <i class="fas fa-utensils me-2"></i> Catering Menu
+          </h2>
+        </div>
+
+        <!-- Tab Menu -->
+        <ul class="nav nav-pills d-flex justify-content-center flex-wrap mb-4 gap-2" id="menuTabs">
+          <li class="nav-item">
+            <a class="nav-link active text-center px-3 py-2" data-filter="catering" href="#">
+              Catering Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center px-3 py-2" data-filter="breakfast" href="#">
+              Breakfast Set
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-center px-3 py-2" data-filter="lunch" href="#">
+              Lunch Box
+            </a>
+          </li>
+        </ul>
+
+        <!-- Menu Grid -->
+        <div class="row" id="menuItems">
+          <!-- Catering Menu -->
+          <div class="col-sm-6 col-md-4 mb-4 menu-item catering text-center">
+            <img src="./src/Menu/Catering-1.jpg" class="img-fluid rounded menu-img w-100" alt="Cheese Cake Slice" />
+            <h5 class="mt-2">Cheese Cake Slice</h5>
+            <p>Light and sweet dessert, ideal for event refreshments</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item catering text-center">
+            <img src="./src/Menu/Catering-2.jpg" class="img-fluid rounded menu-img w-100" alt="Grilled Salmon" />
+            <h5 class="mt-2">Grilled Salmon with Lemon Butter Sauce</h5>
+            <p>Elegant and healthy choice for formal gatherings</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item catering text-center">
+            <img src="./src/Menu/Catering-3.jpg" class="img-fluid rounded menu-img w-100" alt="Vegetarian Lasagna" />
+            <h5 class="mt-2">Vegetarian Lasagna</h5>
+            <p>Perfect for guests who prefer a meat-free option</p>
+          </div>
+
+          <!-- Lunch Menu -->
+          <div class="col-sm-6 col-md-4 mb-4 menu-item lunch text-center">
+            <img src="./src/Menu/Lunch-1.jpg" class="img-fluid rounded menu-img w-100" alt="Grilled Chicken Lunchbox" />
+            <h5 class="mt-2">Grilled Chicken Lunchbox</h5>
+            <p>A practical and delicious lunch package</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item lunch text-center">
+            <img src="./src/Menu/Lunch-2.jpg" class="img-fluid rounded menu-img w-100" alt="Black Pepper Beef Lunchbox" />
+            <h5 class="mt-2">Black Pepper Beef Lunchbox</h5>
+            <p>Oriental flavor with tender black pepper beef</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item lunch text-center">
+            <img src="./src/Menu/Lunch-3.jpg" class="img-fluid rounded menu-img w-100" alt="Fish Fillet Lunchbox" />
+            <h5 class="mt-2">Fish Fillet Lunchbox</h5>
+            <p>Crispy fish fillet with vegetables and signature chili sauce</p>
+          </div>
+
+          <!-- Breakfast Menu -->
+          <div class="col-sm-6 col-md-4 mb-4 menu-item breakfast text-center">
+            <img src="./src/Menu/Breakfest-1.jpg" class="img-fluid rounded menu-img w-100" alt="Croissant Breakfast Set" />
+            <h5 class="mt-2">Croissant Set</h5>
+            <p>Served with butter, jam, and a cup of hot tea or coffee</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item breakfast text-center">
+            <img src="./src/Menu/Breakfest-2.jpg" class="img-fluid rounded menu-img w-100" alt="Scrambled Eggs Breakfast Set" />
+            <h5 class="mt-2">Scrambled Eggs Set</h5>
+            <p>Includes toast, sausage, and fresh vegetables</p>
+          </div>
+          <div class="col-sm-6 col-md-4 mb-4 menu-item breakfast text-center">
+            <img src="./src/Menu/Breakfest-3.jpg" class="img-fluid rounded menu-img w-100" alt="Oatmeal Breakfast Set" />
+            <h5 class="mt-2">Oatmeal Set</h5>
+            <p>Served with fresh fruit slices and low-fat yogurt</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section style="background-color: #0c1322">
+      <div class="container-fluid px-0">
+        <div class="row g-0 align-items-stretch">
+          <!-- Kiri: Gambar dan Play -->
+          <div class="col-lg-6 position-relative">
+            <img
+              src="./src/Menu/Subcription.jpg"
+              alt="Promo"
+              class="img-fluid w-100 h-100 object-fit-cover"
+              style="height: 100%; min-height: 500px; object-position: center"
+            />
+            </a>
+          </div>
+
+          <!-- Kanan: Form -->
+          <div class="col-lg-6 bg-dark bg-opacity-75 text-white p-5">
+            <div class="mb-3 d-flex align-items-center gap-2">
+              <i class="bi bi-envelope-fill text-warning fs-5"></i>
+              <span class="text-warning fw-semibold small">Subscribe Now</span>
+            </div>
+            <h2 class="fw-bold text-white display-6 mb-4">
+              Tasty & Healthy Meals, <br class="d-none d-md-block"> Every Single Day
+            </h2>            
+
+            <form action="/subscribe" method="POST">
+              <div class="row g-3">
+                <!-- Phone Number -->
+                <div class="col-12">
+                  <label for="phone_number" class="form-label text-white"
+                    >Phone number</label
+                  >
+                  <input
+                    type="text"
+                    name="phone_number"
+                    id="phone_number"
+                    class="form-control custom-dark"
+                    placeholder="Example: 081234567890"
+                    required
+                  />
+                </div>
+
+                <!-- Meal Plan -->
+                <div class="col-12">
+                  <label for="plan_id" class="form-label text-white"
+                    >Select Meal Plan Package</label
+                  >
+                  <select
+                    name="plan_id"
+                    id="plan_id"
+                    class="form-select custom-dark"
+                    required
+                  >
+                    <option disabled selected value="">
+                      -- Select Package --
+                    </option>
+                    <option value="1">Daily - Rp 50.000</option>
+                    <option value="2">Weekly - Rp 300.000</option>
+                    <option value="3">Monthly - Rp 1.200.000</option>
+                  </select>
+                </div>
+
+                <!-- Meal Type -->
+                <div class="col-12">
+                  <label for="meal_type" class="form-label text-white"
+                    >Type of Food</label
+                  >
+                  <select
+                    name="meal_type"
+                    id="meal_type"
+                    class="form-select custom-dark"
+                    required
+                  >
+                    <option disabled selected value="">
+                      -- Select Package --
+                    </option>
+                    <option value="Breakfast">Breakfast</option>
+                    <option value="Lunch">Lunch</option>
+                    <option value="Event">Event</option>
+                    <option value="Breakfast, Lunch + Event">
+                      All Packages
+                    </option>
+                  </select>
+                </div>
+
+                <!-- Delivery Days -->
+                <div class="col-12">
+                  <label class="form-label text-white">Delivery Day</label>
+                  <div class="row g-2">
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="1" id="day-monday">
+                        <label class="form-check-label text-white" for="day-monday">Monday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="2" id="day-tuesday">
+                        <label class="form-check-label text-white" for="day-tuesday">Tuesday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="3" id="day-wednesday">
+                        <label class="form-check-label text-white" for="day-wednesday">Wednesday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="4" id="day-thursday">
+                        <label class="form-check-label text-white" for="day-thursday">Thursday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="5" id="day-friday">
+                        <label class="form-check-label text-white" for="day-friday">Friday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="6" id="day-saturday">
+                        <label class="form-check-label text-white" for="day-saturday">Saturday</label>
+                      </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="delivery_days[]" value="7" id="day-sunday">
+                        <label class="form-check-label text-white" for="day-sunday">Sunday</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Allergies -->
+                <div class="col-12">
+                  <label for="allergies" class="form-label text-white"
+                    >Food Allergies / Preferences</label
+                  >
+                  <textarea
+                    name="allergies"
+                    id="allergies"
+                    class="form-control custom-dark"
+                    rows="3"
+                    placeholder="Example: Don't like spicy food, allergic to seafood"
+                  ></textarea>
+                </div>
+
+                <!-- Submit -->
+                <div class="col-12">
+                  <button
+                    type="submit"
+                    class="btn btn-warning w-100 fw-semibold text-dark"
+                  >
+                    SUBSCRIBE NOW
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5 bg-light" id="testimonial">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="mb-3">
+            <i class="bi bi-chat-dots-fill fs-1 text-warning"></i>
+          </div>
+          <h2 class="fw-bold display-5">What People Are Saying</h2>
+          <p class="fst-italic">
+            Real voices from our happy food lovers 💬✨
+          </p>
+        </div>
+
+        <!-- Swiper -->
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <!-- Slide 1 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm h-100 p-4 rounded-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-person-circle fs-1 text-warning me-3"></i>
+                  <div>
+                    <h6 class="mb-0">Foodie88</h6>
+                    <div class="text-warning small">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">“My favorite catering service. Delicious and consistent taste every time!”</p>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm h-100 p-4 rounded-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-person-circle fs-1 text-warning me-3"></i>
+                  <div>
+                    <h6 class="mb-0">User123</h6>
+                    <div class="text-warning small">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">“The food is amazing! Fast delivery and very fresh meals. Will order again!”</p>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="swiper-slide">
+              <div class="card border-0 shadow-sm h-100 p-4 rounded-4 bg-white">
+                <div class="d-flex align-items-center mb-3">
+                  <i class="bi bi-person-circle fs-1 text-warning me-3"></i>
+                  <div>
+                    <h6 class="mb-0">Anna345</h6>
+                    <div class="text-warning small">
+                      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                </div>
+                <p class="card-text">“Healthy food and great portion sizes. Highly recommend for busy days.”</p>
+              </div>
+            </div>
+
+           <!-- Slide 4 -->
+           <div class="swiper-slide">
+            <div class="card border-0 shadow-sm h-100 p-4 rounded-4 bg-white">
+              <div class="d-flex align-items-center mb-3">
+                <i class="bi bi-person-circle fs-1 text-warning me-3"></i>
+                <div>
+                  <h6 class="mb-0">Anna345</h6>
+                  <div class="text-warning small">
+                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i>
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">“Healthy food and great portion sizes. Highly recommend for busy days.”</p>
+            </div>
+          </div>
+          </div>
+
+          <!-- Pagination -->
+          <div class="swiper-pagination mt-4"></div>
+        </div>
+      </div>
+    </section>
+
+     <!-- Footer Section -->
+    <footer class="bg-dark text-white pt-5 pb-4">
+      <div class="container text-md-start text-center">
+        <div class="row">
+          <!-- Brand/Logo -->
+          <div class="col-md-3 mb-4">
+            <h5 class="fw-bold text-warning mb-3">
+              <img src="./src/Logo.png" alt="Logo" width="50px" height="50px" > | SEA Catering
+            </h5>
+            <p class="text-light small">
+              Delicious. Fresh. On Time.<br>
+              Your trusted partner for daily & event meals.
+            </p>
+          </div>
+
+          <!-- Navigation Links -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-semibold mb-3">Quick Links</h6>
+            <ul class="list-unstyled">
+              <li><a href="#home" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#menu" class="text-light text-decoration-none">Menu</a></li>
+              <li><a href="#about" class="text-light text-decoration-none">About</a></li>
+              <li><a href="#contact" class="text-light text-decoration-none">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Services -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-semibold mb-3">Our Services</h6>
+            <ul class="list-unstyled">
+              <li><span class="text-light">📦 Daily Catering</span></li>
+              <li><span class="text-light">🥗 Healthy Meal Plans</span></li>
+              <li><span class="text-light">🎉 Event Catering</span></li>
+              <li><span class="text-light">🏢 Office Orders</span></li>
+            </ul>
+          </div>
+
+          <!-- Contact & Social -->
+          <div class="col-md-3 mb-4">
+            <h6 class="text-uppercase fw-semibold mb-3">Get in Touch</h6>
+            <p class="small text-light mb-1"><i class="bi bi-geo-alt-fill me-2"></i>Bandung, Indonesia</p>
+            <p class="small text-light mb-1"><i class="bi bi-envelope-fill me-2"></i>info@seacatering.com</p>
+            <p class="small text-light mb-3"><i class="bi bi-phone-fill me-2"></i>+62 812 3456 7890</p>
+            <div>
+              <a href="#" class="text-light me-3"><i class="bi bi-facebook fs-5"></i></a>
+              <a href="#" class="text-light me-3"><i class="bi bi-instagram fs-5"></i></a>
+              <a href="#" class="text-light"><i class="bi bi-whatsapp fs-5"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-center mt-4 border-top pt-3 small text-light opacity-75">
+          &copy; 2025 SEA Catering. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- AOS, jQuery, Swiper -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Init AOS -->
+<script>
+  AOS.init();
+</script>
+
+<!-- Custom JS -->
+<script src="script.js"></script>
+
+
+  </body>
+</html>
